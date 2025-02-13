@@ -5,6 +5,7 @@
 //  Created by HJianBo on 2019/5/2.
 //  Copyright © 2019 emqx.io. All rights reserved.
 //
+import SwiftUI
 
 import Foundation
 import Dispatch
