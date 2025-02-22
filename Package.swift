@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "CocoaMQTT",
     platforms: [
-        .macOS(.v10_12),
-        .iOS(.v10),
+        .macOS(.v10_13),
+        .iOS(.v12),
         .tvOS(.v10)
     ],
     products: [
@@ -15,8 +15,8 @@ let package = Package(
         .library(name: "CocoaMQTTWebSocket", targets: [ "CocoaMQTTWebSocket" ])
     ],
     dependencies: [
-        .package(url: "https://github.com/leeway1208/MqttCocoaAsyncSocket", exact: "1.0.4"),
-        .package(url: "https://github.com/daltoniam/Starscream.git", from: "3.1.1"),
+        .package(url: "https://github.com/daltoniam/Starscream.git", .exact("4.0.4")),
+        .package(url: "https://github.com/leeway1208/MqttCocoaAsyncSocket", from: "1.0.8"),
     ],
     targets: [
         .target(name: "CocoaMQTT",
